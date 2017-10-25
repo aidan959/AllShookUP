@@ -2,11 +2,28 @@
   <head>
     <title>All Shook Up</title>
     <meta content="">
-    <style></style>
+    <style>
+   @-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+img.star
+{
+    -webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         0.5s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+}
+</style>
   </head>
   <body background="jesus.jpg">
     
     <h1>Here Is a Photo of Jesus<br> "I'm Gay!", Jake 2017.</h1>
-  <img  src="jesus.jpg"/>
+  <img class=spin src="jesus.jpg"/>
   </body>
 </html>
